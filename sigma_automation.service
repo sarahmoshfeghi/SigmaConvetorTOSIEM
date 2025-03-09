@@ -1,0 +1,14 @@
+[Unit]
+Description=Run SIgma to spl mail service
+
+[Service]
+Type=simple
+WorkingDirectory=/pathtotheworkingdirectory/templates
+ExecStart=/bin/bash -c 'source /etc/venv/bin/activate && python3.10 sigmascheduler.py'
+Restart=always
+StandardOutput=file:/var/log/sigmatosplmail.log
+StandardError=file:/var/log/sigmatosplmail.err
+
+[Install]
+WantedBy=multi-user.target
+
