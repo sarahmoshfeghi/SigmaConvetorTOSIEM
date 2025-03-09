@@ -9,10 +9,9 @@ import os
 import glob
 import shutil
 sigma_rules_dir = '/pathtoyamlfile/yamlfile'
-output_dir = './spl_queries'
-#zip_file = './spl_queries/splrule.zip'
+output_dir = '/pathtothesplquery/spl_queries'
 zip_file = '/pathtosplfile/splrule.zip'
-#recipient_email = 'sara.mos@abramad.com'
+recipient_email = 'emailaddress'
 def clear_folder(folder_path):
     # Check if the folder exists
     if os.path.exists(folder_path) and os.path.isdir(folder_path):
